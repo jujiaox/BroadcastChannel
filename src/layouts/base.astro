@@ -102,7 +102,7 @@ const navs = (getEnv(import.meta.env, Astro, 'NAVS') || '')
             <div class="nav">
               <div class="nav-item">
                 <a href={SITE_URL} title={channel?.title} class={`nav-link ${pathname === '/' ? 'current' : ''}`}>
-                  Home
+                  首页
                 </a>
               </div>
               {
@@ -113,7 +113,7 @@ const navs = (getEnv(import.meta.env, Astro, 'NAVS') || '')
                       title="Tags"
                       class={`nav-link ${pathname === '/tags' ? 'current' : ''}`}
                     >
-                      Tags
+                      标签
                     </a>
                   </div>
                 ) : null
@@ -126,7 +126,7 @@ const navs = (getEnv(import.meta.env, Astro, 'NAVS') || '')
                       title="Links"
                       class={`nav-link ${pathname === '/links' ? 'current' : ''}`}
                     >
-                      Links
+                      链接
                     </a>
                   </div>
                 ) : null
@@ -149,14 +149,18 @@ const navs = (getEnv(import.meta.env, Astro, 'NAVS') || '')
             <div class="copyright-wrap">
               Powered by
               <a
-                href="https://github.com/ccbikai/BroadcastChannel"
-                title="BroadcastChannel"
+                href="https://yangmao.qqcdn.eu.org"
+                title="薅羊毛线报"
                 target="_blank"
                 rel="noopener"
               >
-                BroadcastChannel
+                Code
+              </a>
+              <a
+                href="https://github.com/ccbikai/BroadcastChannel" title="Code" target="_blank" rel="nofollow">
+                Code
               </a> &
-              <a href="https://github.com/Planetable/SiteTemplateSepia" title="Sepia" target="_blank" rel="noopener">
+              <a href="https://github.com/Planetable/SiteTemplateSepia" title="Sepia" target="_blank" rel="nofollow">
                 Sepia
               </a>
             </div>
